@@ -2,7 +2,7 @@
 // https://www.airbnb.com/rooms/3993887?source_impression_id=p3_1580170145_W7ebx61M8E4qL%2F76
 // https://www.airbnb.com/rooms/3489531?adults=1&children=0&infants=0&source_impression_id=p3_1580175725_ajUXXweReIsoL3PM
 // https://www.airbnb.com/rooms/12325663?adults=1&children=0&infants=0&source_impression_id=p3_1580175919_JhkzR3va1ukgUKD%2F
-var MoreHouse = [
+var MoreHouse = (
     {
         Property_id: 12558899,  //#12558899
         Picture: ['https://team-florida.s3-us-west-1.amazonaws.com/00/00.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/01.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/02.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/03.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/04.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/05.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/06.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/07.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/08.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/09.jpg'],        // [‘url’ , ‘url’ , ‘url’, …]
@@ -36,6 +36,6 @@ var MoreHouse = [
         Name: "Spirit Wind - Architectural Oasis in Joshua Tree",
         Price: 262
     }
-] 
+) 
 
 module.exports = MoreHouse;

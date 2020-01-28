@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import data from '../../../seed_data.js'
 
 class MoreHouse extends React.Component {
 
@@ -23,7 +24,7 @@ class MoreHouse extends React.Component {
                     }}
                 >This is Page1!</div>
 
-
+                    
 
                 <div className="row" >
                 <h3>From From local</h3>
@@ -58,6 +59,11 @@ class MoreHouse extends React.Component {
                         <img src='https://team-florida.s3-us-west-1.amazonaws.com/00/09.jpg' width="316" height="210.66"></img>
                 </div>
                 </div>
+
+
+
+
+         
 
 
             </div>

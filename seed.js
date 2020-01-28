@@ -17,6 +17,6 @@ var data = require('./database/index.js');
 //   }
 // })
 
-console.log(fData)
+// console.log(fData)
 
 // seedDatabase(data);
