@@ -7,7 +7,7 @@ db.once('open', function() {
   console.log('The Database is connected')
 });
 
-const MoreHouseSchema = new mongoose.Schema({
+var MoreHouseSchema = new mongoose.Schema({
     Property_id: Number,  //#12558899
     Picture: Array,        // [‘url’ , ‘url’ , ‘url’, …]
     Favorite: Boolean,
@@ -16,12 +16,12 @@ const MoreHouseSchema = new mongoose.Schema({
     Rating: Number,
     NumOfRate: Number,
     Name: String,
-    Price: Number,
+    Price: Number
 });
 
 var MoreHouse = mongoose.model('MoreHouse', MoreHouseSchema );
 
-module.exports = MoreHouse;
+module.exports = {MoreHouse};
 
 
 

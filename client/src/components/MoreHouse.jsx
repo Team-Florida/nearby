@@ -23,17 +23,43 @@ class MoreHouse extends React.Component {
                     }}
                 >This is Page1!</div>
 
+
+
                 <div className="row" >
-                    <div className="column">
-                        <img src='pic/00/01.jpg' width="316" height="210.66"></img>
-                    </div>
-                    <div className="column">
-                        <img src='pic/00/02.jpg' width="316" height="210.66"></img>
-                    </div>
-                    <div className="column">
-                        <img src='pic/00/03.jpg' width="316" height="210.66"></img>
-                    </div>
+                <h3>From From local</h3>
+                <div className="column">
+                    <img src='pic/00/01.jpg' width="316" height="210.66"></img>
                 </div>
+                <div className="column">
+                    <img src='pic/00/02.jpg' width="316" height="210.66"></img>
+                </div>
+                <div className="column">
+                    <img src='pic/00/03.jpg' width="316" height="210.66"></img>
+                </div>
+                <div className="column">
+                    <img src='pic/00/09.jpg' width="316" height="210.66"></img>
+            </div>
+            </div>
+
+
+
+                <div className="row" >
+                    <h3>From S3 database</h3>
+                    <div className="column">
+                        <img src='https://team-florida.s3-us-west-1.amazonaws.com/00/01.jpg' width="316" height="210.66"></img>
+                    </div>
+                    <div className="column">
+                        <img src='https://team-florida.s3-us-west-1.amazonaws.com/00/02.jpg' width="316" height="210.66"></img>
+                    </div>
+                    <div className="column">
+                        <img src='https://team-florida.s3-us-west-1.amazonaws.com/00/03.jpg' width="316" height="210.66"></img>
+                    </div>
+                    <div className="column">
+                        <img src='https://team-florida.s3-us-west-1.amazonaws.com/00/09.jpg' width="316" height="210.66"></img>
+                </div>
+                </div>
+
+
             </div>
 
 
