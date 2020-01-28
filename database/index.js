@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/houseDatabase');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -29,7 +29,8 @@ module.exports = {MoreHouse};
 
 var newMoreHouse = [
   new MoreHouse ({
-    
+
+
       Property_id: 12558899,  //#12558899
       Picture: ['https://team-florida.s3-us-west-1.amazonaws.com/00/00.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/01.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/02.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/03.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/04.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/05.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/06.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/07.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/08.jpg','https://team-florida.s3-us-west-1.amazonaws.com/00/09.jpg'],        // [‘url’ , ‘url’ , ‘url’, …]
       Favorite: true,
@@ -39,8 +40,13 @@ var newMoreHouse = [
       NumOfRate: 261,
       Name: "Romantic Cabana with view",
       Price: 40
+
   }),
+
   new MoreHouse ({
+
+
+   
       Property_id: 15558397,  //#12558899
       Picture: ['https://team-florida.s3-us-west-1.amazonaws.com/01/00.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/01.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/02.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/03.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/04.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/05.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/06.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/07.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/08.jpg','https://team-florida.s3-us-west-1.amazonaws.com/01/09.jpg'],        
       Favorite: false,
@@ -50,8 +56,10 @@ var newMoreHouse = [
       NumOfRate: 432,
       Name: "Rock Reach House",
       Price: 366
+
   }),
   new MoreHouse({
+
       Property_id: 11588797,  //#12558899
       Picture: ['https://team-florida.s3-us-west-1.amazonaws.com/02/00.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/01.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/02.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/03.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/04.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/05.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/06.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/07.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/08.jpg','https://team-florida.s3-us-west-1.amazonaws.com/02/09.jpg'],
       Favorite: true,
@@ -61,6 +69,7 @@ var newMoreHouse = [
       NumOfRate: 388,
       Name: "Spirit Wind - Architectural Oasis in Joshua Tree",
       Price: 262
+    
   })
 ]
 

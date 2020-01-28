@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/../client/dist')); //client
 //   })
 // })
 
-app.get('/image',(req,res) => {
+app.get('/houseDB',(req,res) => {
   db.MoreHouse.find({}, (error,data) => {
     if (error) {
       req.sendStatus(404)

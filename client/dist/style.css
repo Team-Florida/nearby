@@ -71,3 +71,13 @@ ul,ol {
     clear: both;
     display: table;
   }
+
+  ._26piifo {
+    overflow-wrap: break-word !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    line-height: 1.25em !important;
+    color: rgb(72, 72, 72) !important;
+    margin: 0px !important;
+}
