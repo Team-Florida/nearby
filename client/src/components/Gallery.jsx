@@ -2,10 +2,10 @@ import React from 'react';
 
 class Gallery extends React.Component {
     render() {
-        if (this.props.data.length > 0) {
-            var image1 = this.props.data[0].Picture[0] //works
-            var price1 = this.props.data[0].Price
-        }
+        // if (this.props.data.length > 0) {
+        //     var image1 = this.props.data[0].Picture[0]; //works
+        //     var price1 = this.props.data[0].Price;
+        // };
         return (
             <div>
 
@@ -25,23 +25,23 @@ class Gallery extends React.Component {
                     }}
                 >This is Page1!</div>
 
-                    
+
 
                 <div className="row" >
-                <h1>From From local</h1>
-                <div className="column">
-                    <img src='pic/00/01.jpg' width="316" height="210.66"></img>
+                    <h1>From From local</h1>
+                    <div className="column">
+                        <img src='pic/00/01.jpg' width="316" height="210.66"></img>
+                    </div>
+                    <div className="column">
+                        <img src='pic/00/02.jpg' width="316" height="210.66"></img>
+                    </div>
+                    <div className="column">
+                        <img src='pic/00/03.jpg' width="316" height="210.66"></img>
+                    </div>
+                    <div className="column">
+                        <img src='pic/00/09.jpg' width="316" height="210.66"></img>
+                    </div>
                 </div>
-                <div className="column">
-                    <img src='pic/00/02.jpg' width="316" height="210.66"></img>
-                </div>
-                <div className="column">
-                    <img src='pic/00/03.jpg' width="316" height="210.66"></img>
-                </div>
-                <div className="column">
-                    <img src='pic/00/09.jpg' width="316" height="210.66"></img>
-            </div>
-            </div>
 
 
 
@@ -58,15 +58,15 @@ class Gallery extends React.Component {
                     </div>
                     <div className="column">
                         <img src='https://team-florida.s3-us-west-1.amazonaws.com/00/09.jpg' width="316" height="210.66"></img>
+                    </div>
                 </div>
-                </div>
-////////////////////////////////////////
-                 
 
 
-            <h1>From Local DataBase</h1>
-            <p>                    </p>
-            <h2 style = {{
+
+
+                <h1>From Local DataBase</h1>
+                <p>                    </p>
+                <h2 style={{
                     overflow_wrap: 'break_word',
                     font_family: 'Circular',
                     font_size: '24px',
@@ -75,12 +75,8 @@ class Gallery extends React.Component {
                     color: 'rgb(72, 72, 72)',
                     margin: '0px',
                 }}>More homes you may like</h2>
-            <p>                    </p>
+                <p>                    </p>
 
-
-
-            <img src={image1} width="316" height="210.66"/>
-            <div>{price1}</div>
 
 
 
@@ -107,3 +103,7 @@ export default Gallery;
 //     margin: '0px',
 // }}
 // >More homes you may like</div>
+
+
+// <img src={image1} width="316" height="210.66"/>
+// <div>{price1}</div>

@@ -11,7 +11,7 @@ const getData= (data,callback) => {
         }
         else {
             // callback(Price)
-            console.log(response.body)
+            // console.log(response.body)
         }
     })
 }

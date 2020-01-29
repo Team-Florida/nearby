@@ -35,6 +35,7 @@ class MoreHouse extends React.Component {
         return (
             <div>
                 <Gallery data={this.state.data}/>
+            
          
             </div>
         
@@ -44,4 +45,3 @@ class MoreHouse extends React.Component {
 
 export default MoreHouse;
 
-// <img src={image} />
