@@ -2,6 +2,7 @@ import React from 'react';
 
 class Gallery extends React.Component {
     render() {
+
         if (this.props.data.length > 0) {
             var i = Math.floor(Math.random() * 10) //ramdon pic from 0-9
             var j = Math.floor(Math.random() * 10)
