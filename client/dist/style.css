@@ -7,7 +7,7 @@
 } */
 
 body {
-    background-color: coral;
+    background-color: rgb(170, 80, 255);
 }
 
 body {
@@ -59,15 +59,180 @@ ul,ol {
 
 }
 
-.column {
+/* .column {
     float: left;
     width: 33.33%;
     padding: 5px;
   }
-  
-  /* Clear floats after image containers */
-.row::after {
+
+.row {
+    margin-top: 16px;
+    margin-bottom: 24px;
     content: "";
     clear: both;
     display: table;
+} */
+
+
+.row .column {
+    float: left;
+    width: 12.5%;
+    background-color: #fff;
+    border: 10px solid #fff;
+    display: table;
+    text-align:center;
+    float:left;
+    position:relative;
+  
   }
+  /* Clear floats after image containers */
+/* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+  ._26piifo {
+    overflow-wrap: break-word !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    line-height: 1.25em !important;
+    color: rgb(72, 72, 72) !important;
+    margin: 0px !important;
+}
+
+
+
+.morehome {
+    position: relative;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.ds-div {
+    /* display: block; */
+    height: 222.22px;
+    width: 333.33px;
+}
+
+
+
+/* type bed and heart*/
+
+.firstRowinBox {
+    /* -webkit-box-align: center !important;
+    font-size: 14px !important;
+    line-height: 18px !important; */
+    align-items: center !important;
+    display: inline-flex !important;
+    /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important; */
+    width: 100% !important;
+}
+
+.typebedStyle {
+    color: rgba(93, 90, 90, 0.582);
+    /* line-height: 20px !important;
+    max-height: 20px !important; */
+    /* text-overflow: ellipsis !important; */
+    /* display: -webkit-box !important; */
+    /* -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important; */
+    /* animation-duration: 300ms !important;
+    animation-name: keyframe_18jn58a !important; */
+    /* animation-timing-function: ease-in-out !important;
+    flex: 1 1 0% !important;
+    /* overflow: hidden !important; */
+}
+
+.rateStyle1 {
+    margin-left: 4px !important;
+    animation-duration: 300ms !important;
+    animation-name: keyframe_18jn58a !important;
+    animation-timing-function: ease-in-out !important;
+}
+
+.rateStyle2 {
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    display: flex !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+
+
+.rateStyle {
+    color: rgb(34, 34, 34) !important;
+    padding-left: 2px !important;
+}
+
+.smallStar {
+    height: 18px;
+    width: 15px;
+}
+
+.numrateStyle {
+    color: rgb(113, 113, 113) !important;
+    padding-left: 2px !important;
+}
+
+
+
+
+/* Name  */
+
+.nameStyle {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 400 !important;
+    color: rgb(34, 34, 34) !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    max-height: 20px !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+}
+
+/*  Price area */
+.priceStyle0 {
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    color: rgb(34, 34, 34) !important;
+    display: flex !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+}
+
+.priceStyle1 {
+    font-weight: 800 !important;
+}
+
+.priceStyle2  {
+    border: 0px !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(100%) !important;
+    clip-path: inset(100%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0px !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+}
+
+/*   */
+
+
+
+
+.testing {
+    color: rgba(200, 28, 28, 0.582);
+}
