@@ -1,47 +1,80 @@
 import React from 'react';
 
 class Gallery extends React.Component {
-    render() {
-        if (this.props.data.length > 0) {
-            var i = Math.floor(Math.random() * 10) //ramdon pic from 0-9
-            var j = Math.floor(Math.random() * 10)
-            var k = Math.floor(Math.random() * 10)
-            var image1 = this.props.data[0].Picture[i]; //works //image array
-            var image2 = this.props.data[1].Picture[j]
-            var image3 = this.props.data[2].Picture[k]
-            var price1 = this.props.data[0].Price;
-            var price2 = this.props.data[1].Price;
-            var price3 = this.props.data[2].Price;
-            var name1 = this.props.data[0].Name;
-            var name2 = this.props.data[1].Name
-            var name3 = this.props.data[2].Name
-            var NumRate1 = this.props.data[0].NumOfRate;
-            var NumRate2 = this.props.data[1].NumOfRate;
-            var NumRate3 = this.props.data[2].NumOfRate;
-            var rate1 = this.props.data[0].Rating;
-            var rate2 = this.props.data[1].Rating;
-            var rate3 = this.props.data[2].Rating;
-            var bed1 = this.props.data[0].NumOfBed
-            var bed2 = this.props.data[1].NumOfBed
-            var bed3 = this.props.data[2].NumOfBed
-            var type1 = this.props.data[0].Type
-            var type2 = this.props.data[1].Type
-            var type3 = this.props.data[2].Type
-            var favorite1 = this.props.data[0].Favorite;
-            var favorite2 = this.props.data[0].Favorite;
-            var favorite3 = this.props.data[0].Favorite;
-            console.log(type3)
-
-
-
-            // for (i = 0; i < image1.length; i += 1) {
-
-            // }
-
-        };
-        if (this.props.data.length > 0) { // testing del later
-            console.log(image1.length)
+    constructor(props) {
+        super(props);
+        this.state = {
+            num1: 0,
+            num2: 1,
+            num3: 2,
+            i: 0, //ramdon pic from 0-9
+            j: 0,
+            k: 0,
         }
+        this.previous = this.previous.bind(this);
+        this.next = this.next.bind(this);
+    }
+
+    previous() {
+        this.setState ({
+            num1: Math.floor(Math.random() * 10),
+            num2: Math.floor(Math.random() * 10),
+            num3: Math.floor(Math.random() * 10),
+            i: Math.floor(Math.random() * 10), //ramdon pic from 0-9
+            j: Math.floor(Math.random() * 10),
+            k: Math.floor(Math.random() * 10),
+        })
+    };
+
+    next() {
+        this.setState ({
+            num1: Math.floor(Math.random() * 10),
+            num2: Math.floor(Math.random() * 10),
+            num3: Math.floor(Math.random() * 10),
+            i: Math.floor(Math.random() * 10), //ramdon pic from 0-9
+            j: Math.floor(Math.random() * 10),
+            k: Math.floor(Math.random() * 10),
+        })
+    };
+
+    render() {
+        console.log(this.state.num1)
+
+        if (this.props.data.length > 0) {
+            // var num1 = Math.floor(Math.random() * 10)
+            // var num2 = Math.floor(Math.random() * 10)
+            // var num3 = Math.floor(Math.random() * 10)
+            // var i = Math.floor(Math.random() * 10) //ramdon pic from 0-9
+            // var j = Math.floor(Math.random() * 10)
+            // var k = Math.floor(Math.random() * 10)
+            var image1 = this.props.data[this.state.num1].Picture[this.state.i]; //works //image array
+            var image2 = this.props.data[this.state.num2].Picture[this.state.j]
+            var image3 = this.props.data[this.state.num3].Picture[this.state.k]
+            var price1 = this.props.data[this.state.num1].Price;
+            var price2 = this.props.data[this.state.num2].Price;
+            var price3 = this.props.data[this.state.num3].Price;
+            var name1 = this.props.data[this.state.num1].Name;
+            var name2 = this.props.data[this.state.num2].Name
+            var name3 = this.props.data[this.state.num3].Name
+            var NumRate1 = this.props.data[this.state.num1].NumOfRate;
+            var NumRate2 = this.props.data[this.state.num2].NumOfRate;
+            var NumRate3 = this.props.data[this.state.num3].NumOfRate;
+            var rate1 = this.props.data[this.state.num1].Rating;
+            var rate2 = this.props.data[this.state.num2].Rating;
+            var rate3 = this.props.data[this.state.num3].Rating;
+            var bed1 = this.props.data[this.state.num1].NumOfBed
+            var bed2 = this.props.data[this.state.num2].NumOfBed
+            var bed3 = this.props.data[this.state.num3].NumOfBed
+            var type1 = this.props.data[this.state.num1].Type
+            var type2 = this.props.data[this.state.num2].Type
+            var type3 = this.props.data[this.state.num3].Type
+            var favorite1 = this.props.data[this.state.num1].Favorite;
+            var favorite2 = this.props.data[this.state.num2].Favorite;
+            var favorite3 = this.props.data[this.state.num3].Favorite;
+            console.log(type3)
+        };
+
+
 
 
         return (
@@ -71,12 +104,12 @@ class Gallery extends React.Component {
 
 
                 <h1>Build Gallery</h1>
-
-                <div >
-                    <button>Slice more </button>
+                <button onClick={this.previous}>Previous</button>
+                <div>
+                
                     <div className="row" >
 
-                        <div className="column">
+                        <div className="column" >
                             <img src={image1} className="ds-div" />
 
                             <div aria-live="polite" className="firstRowinBox" style={{ margin_top: '14px', margin_bottom: '4px' }}>
@@ -181,7 +214,7 @@ class Gallery extends React.Component {
 
 
 
-                <button>Slice next</button>
+                <button onClick={this.next}>Next</button>
 
 
 
