@@ -83,6 +83,7 @@ var newMoreHouse = [
 // })
 
 // array = [];
+console.log(newMoreHouse)
 MoreHouse.insertMany(newMoreHouse, function(err, data) {
   if (err){
    console.log("Error: " + err)

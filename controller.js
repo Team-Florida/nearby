@@ -1,20 +1,20 @@
 
-const request = require('request')
-const url = 'http://localhost:3000/houseDB'
+// const request = require('request')
+// const url = 'http://localhost:3000/houseDB'
 
-const getData= (data,callback) => {
-    request({ url: url, json: true }, (error, response) => {
-        if (error) {
-            callback('Unable to connect to weather service',undefined)
-        } else if (response.body.error) {
-            callback('Unable to find picture', undefined)
-        }
-        else {
-            // callback(Price)
-            // console.log(response.body)
-        }
-    })
-}
+// const getData= (data,callback) => {
+//     request({ url: url, json: true }, (error, response) => {
+//         if (error) {
+//             callback('Unable to connect to weather service',undefined)
+//         } else if (response.body.error) {
+//             callback('Unable to find picture', undefined)
+//         }
+//         else {
+//             // callback(Price)
+//             // console.log(response.body)
+//         }
+//     })
+// }
 
 ///////////////////////////////////////////
 
