@@ -13,6 +13,12 @@ class Gallery extends React.Component {
         }
         this.previous = this.previous.bind(this);
         this.next = this.next.bind(this);
+        this.smallPrevious1 = this.smallPrevious1.bind(this)
+        this.smallNext1 = this.smallNext1.bind(this)
+        this.smallPrevious2 = this.smallPrevious2.bind(this)
+        this.smallNext2 = this.smallNext2.bind(this)
+        this.smallPrevious3 = this.smallPrevious3.bind(this)
+        this.smallNext3 = this.smallNext3.bind(this)
     }
 
     previous() {
@@ -37,16 +43,43 @@ class Gallery extends React.Component {
         })
     };
 
+    smallPrevious1() {
+        this.setState ({
+            i: this.state.i = Math.floor(Math.random() * 10) ,       
+        })
+    }
+    smallNext1() {
+        this.setState ({
+            i: this.state.i = Math.floor(Math.random() * 10) ,       
+        })
+    }
+
+    smallPrevious2() {
+        this.setState ({
+            j: this.state.j = Math.floor(Math.random() * 10) ,       
+        })
+    }
+    smallNext2() {
+        this.setState ({
+            j: this.state.j = Math.floor(Math.random() * 10) ,       
+        })
+    }
+
+    smallPrevious3() {
+        this.setState ({
+            k: this.state.k = Math.floor(Math.random() * 10) ,       
+        })
+    }
+    smallNext3() {
+        this.setState ({
+            k: this.state.k = Math.floor(Math.random() * 10) ,       
+        })
+    }
+
     render() {
         console.log(this.state.num1)
 
         if (this.props.data.length > 0) {
-            // var num1 = Math.floor(Math.random() * 10)
-            // var num2 = Math.floor(Math.random() * 10)
-            // var num3 = Math.floor(Math.random() * 10)
-            // var i = Math.floor(Math.random() * 10) //ramdon pic from 0-9
-            // var j = Math.floor(Math.random() * 10)
-            // var k = Math.floor(Math.random() * 10)
             var image1 = this.props.data[this.state.num1].Picture[this.state.i]; //works //image array
             var image2 = this.props.data[this.state.num2].Picture[this.state.j]
             var image3 = this.props.data[this.state.num3].Picture[this.state.k]
@@ -111,7 +144,10 @@ class Gallery extends React.Component {
 
                         <div className="column" >
                             <img src={image1} className="ds-div" />
+                            <button onClick={this.smallPrevious1}>previous</button>
+                            <button onClick={this.smallNext1}>next</button>
 
+                            
                             <div aria-live="polite" className="firstRowinBox" style={{ margin_top: '14px', margin_bottom: '4px' }}>
                                 <div className="typebedStyle">{type1} · {bed1} beds</div>
                                 <span className="rateStyle1">
@@ -148,6 +184,8 @@ class Gallery extends React.Component {
 
                         <div className="column">
                             <img src={image2} className="ds-div" />
+                            <button onClick={this.smallPrevious2}>previous</button>
+                            <button onClick={this.smallNext2}>next</button>
 
                             <div aria-live="polite" className="firstRowinBox" style={{ margin_top: '14px', margin_bottom: '4px' }}>
                                 <div className="typebedStyle">{type2} · {bed2} beds</div>
@@ -184,6 +222,8 @@ class Gallery extends React.Component {
 
                         <div className="column">
                             <img src={image3} className="ds-div" />
+                            <button onClick={this.smallPrevious3}>previous</button>
+                            <button onClick={this.smallNext3}>next</button>
 
                             <div aria-live="polite" className="firstRowinBox" style={{ margin_top: '14px', margin_bottom: '4px' }}>
                                 <div className="typebedStyle">{type3} · {bed3} beds</div>
@@ -215,6 +255,15 @@ class Gallery extends React.Component {
 
 
                 <button onClick={this.next}>Next</button>
+
+
+
+
+
+
+
+
+
 
 
 
